@@ -1,0 +1,32 @@
+@import '../../styles.scss';
+
+:host {
+    width: 100%;
+}
+
+.nav {
+    height: 45px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    width: 100%;
+    color: $color-light;
+    // background-color: $color-accent1;
+
+    .logo {
+        margin-left: 20px;
+    }
+
+    .items {
+        margin-right: 50px;
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+
+        font-weight: bold;
+    }
+}

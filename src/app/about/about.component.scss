@@ -1,0 +1,47 @@
+@import '../../styles.scss';
+
+:host {
+    height: 100%;
+    width: 100%;
+    // display: flex;
+    // flex-direction: column;
+    // background-color: $color-light;
+    // color: $font-color;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('/images/background_dark.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.details {
+    padding: 20px;
+    background-color: rgba(red($font-color), green($font-color), blue($font-color), .5);
+    max-width: 50%;
+}
+
+.content {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    color: $color-light;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.content-header {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.content-body {
+    font-size: 18px;
+}

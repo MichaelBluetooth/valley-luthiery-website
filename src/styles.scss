@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+$font-color: #252418;
+$color-light: #E9EBF2;
+$color-dark: #83947F;
+$color-accent1: #844D2D;
+$color-accent2: #2D406D;
+
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    // color: $font-color;
+    // background-color: $color-light;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+a:hover {
+    color: $color-accent2
+}
