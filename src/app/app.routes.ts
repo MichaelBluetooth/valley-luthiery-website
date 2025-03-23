@@ -7,18 +7,18 @@ import { ContactComponent } from './contact/contact.component';
 export const routes: Routes = [
     {
         path: '',
-        component: HomeComponent
+        loadComponent: () => import('./home/home.component').then(mod => mod.HomeComponent)
     },
     {
         path: 'about',
-        component: AboutComponent
+        loadComponent: () => import('./about/about.component').then(mod => mod.AboutComponent)
     },
     {
         path: 'services',
-        component: ServicesComponent
+        loadComponent: () => import('./services/services.component').then(mod => mod.ServicesComponent)
     },
     {
         path: 'contact',
-        component: ContactComponent
+        loadComponent: () => import('./contact/contact.component').then(mod => mod.ContactComponent)
     }
 ];
