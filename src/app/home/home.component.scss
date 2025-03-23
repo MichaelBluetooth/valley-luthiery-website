@@ -2,43 +2,17 @@
 
 :host {
     height: 100%;
-    width: 100%;    
+    width: 100%;
 }
 
 .main {
     height: 100vh;
     display: flex;
     flex-direction: row;
-    background-image: url('/images/background2_dark.jpg');
+    background-image: url('images/background2_dark.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-}
-
-.nav {
-    height: 45px;
-
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;  
-    width: 100%;
-    color: $color-light;
-
-    .logo {
-        margin-left: 20px;
-    }
-
-    .items {
-        margin-right: 50px;
-        display: flex;
-        flex-direction: row;
-        gap: 25px;
-
-        font-weight: bold;
-    }
 }
 
 .center-logo {
@@ -51,30 +25,131 @@
 }
 
 
-.secondary {
-    height: 450px;
+.services {
     background-color: $color-accent1;
-    padding-top: 30px;
+    border-top: 10px solid $color-accent2;
+    padding: 0 15px 0 15px;
+}
+
+@media (min-width: $size-lg) {
+    .services {
+        padding: 0 250px 0 250px;
+    }
+}
+
+.services-header {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: $color-light;
+    font-weight: bold;
+    width: 100%;
     display: flex;
+    justify-content: center;
+}
+
+@media (min-width: $size-lg) {
+    .services-header {
+        font-size: 60px;
+    }
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    flex-direction: row;
-    // gap: 10px;
+    color: $color-light;
+    padding-bottom: 35px;
 
-    .box {
-        height: 300px;
-        width: 250px;
-        // border: 1px solid rgba(red($font-color), green($font-color), blue($font-color), .5);
-        border-radius: 5px;
-        background-color: rgba(red($font-color), green($font-color), blue($font-color), .5);
-        color: $color-light;
+    .section-header {
+        font-size: 40px;
     }
 
-    .box-header {
-        margin-top: 15px;
+    .section-content,
+    .learn-more {
+        font-size: 25px;
+        width: 100%;
+    }
+
+    .learn-more {
+        text-decoration: underline;
+        margin-bottom: 25px;
+    }
+
+    .learn-more:hover {
+        color: $color-accent2;
+    }
+
+    .section-text,
+    .section-img {
+        width: 85%;
+    }
+
+    .section-img > img {
+        width: 100%;
+    }
+}
+
+@media (min-width: $size-lg) {
+    .section {
+        flex-direction: row;
+        gap: 130px;
+    
+        .section-text,
+        .section-img {
+            width: 85%;
+        }
+    
+        .section-img > img {
+            width: inherit;
+            height: 450px;
+        }
+    }
+
+    .section-reverse {
+        flex-direction: row-reverse;
+    }
+}
+
+.contact {
+    background-color: $color-dark;
+    border-top: 10px solid $color-accent2;
+    padding: 0 15px 0 15px;
+    color: $font-color;
+    height: 320px;
+}
+
+.contact-header {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 40px;    
+    font-weight: bold;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-content {
+    font-size: 20px;
+}
+
+@media (min-width: $size-lg) {
+    .contact {
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        font-weight: bold;
-        font-size: 20px;
+        padding: 0 250px 0 250px;
+        height: 250px;
     }
+}
+
+.footer {
+    height: 35px;
+    background-color: $font-color;
+    color: $color-light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 5px;
 }

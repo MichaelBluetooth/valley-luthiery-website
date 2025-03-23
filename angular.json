@@ -31,6 +31,7 @@
                 "input": "public"
               }
             ],
+            "externalDependencies": ["images/*"],
             "styles": [
               "src/styles.scss"
             ],
