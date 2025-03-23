@@ -32,3 +32,14 @@ a:link, a:visited {
 a:hover {
     color: $color-accent2
 }
+
+//Get the browser to immediately download all the images for the homepage background
+//This allow the browser to already have the image cached before it show them
+body::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    background-image: url('images/background4_dark.jpg'), url('images/background_dark.jpg'), url('images/background3_dark.jpg'), url('images/background2_dark.jpg'),
+  }

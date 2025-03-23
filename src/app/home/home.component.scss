@@ -5,15 +5,37 @@
     width: 100%;
 }
 
+
+//MAKE SURE THESE IMAGES ARE PRE-LOADED (see styles.scss)
+@keyframes bg-transition {
+    0%, 15%, 100% {
+        background-image: url('images/background2_dark.jpg');
+    }
+
+    30%, 45% {
+        background-image: url('images/background3_dark.jpg')
+    }
+
+    60%, 73% {
+        background-image: url('images/background_dark.jpg');;
+    }
+
+    82%, 90% {
+        background-image: url('images/background4_dark.jpg');
+    }
+}
+
 .main {
     height: 100vh;
     display: flex;
     flex-direction: row;
-    background-image: url('images/background2_dark.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    animation: bg-transition 90s infinite;
+    // background-image: url('images/background2_dark.jpg');
 }
+
 
 .center-logo {
     position: absolute;
@@ -86,7 +108,7 @@
         width: 85%;
     }
 
-    .section-img > img {
+    .section-img>img {
         width: 100%;
     }
 }
@@ -95,13 +117,13 @@
     .section {
         flex-direction: row;
         gap: 130px;
-    
+
         .section-text,
         .section-img {
             width: 85%;
         }
-    
-        .section-img > img {
+
+        .section-img>img {
             width: inherit;
             height: 450px;
         }
@@ -123,7 +145,7 @@
 .contact-header {
     margin-top: 10px;
     margin-bottom: 20px;
-    font-size: 40px;    
+    font-size: 40px;
     font-weight: bold;
     width: 100%;
     display: flex;
