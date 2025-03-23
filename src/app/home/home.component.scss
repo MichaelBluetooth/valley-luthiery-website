@@ -9,19 +9,19 @@
 //MAKE SURE THESE IMAGES ARE PRE-LOADED (see styles.scss)
 @keyframes bg-transition {
     0%, 15%, 100% {
-        background-image: url('images/background2_dark.jpg');
+        background-image: url('images/background2_dark.webp');
     }
 
     30%, 45% {
-        background-image: url('images/background3_dark.jpg')
+        background-image: url('images/background3_dark.webp')
     }
 
     60%, 73% {
-        background-image: url('images/background_dark.jpg');;
+        background-image: url('images/background_dark.webp');;
     }
 
     82%, 90% {
-        background-image: url('images/background4_dark.jpg');
+        background-image: url('images/background4_dark.webp');
     }
 }
 
@@ -33,7 +33,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     animation: bg-transition 80s infinite;
-    // background-image: url('images/background2_dark.jpg');
+    // background-image: url('images/background2_dark.webp');
 }
 
 
@@ -164,14 +164,4 @@
         padding: 0 250px 0 250px;
         height: 250px;
     }
-}
-
-.footer {
-    height: 35px;
-    background-color: $font-color;
-    color: $color-light;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px 5px;
 }
