@@ -14,19 +14,19 @@ export class ServicesComponent {
   services = [
     ["Re-string & Clean", "$40 + strings"],
     ["Set-up", "$60 + strings"],
-    ["Custom bone/synthetic nut replacement", "100,00 US$"],
-    ["Custom bone/synthetic saddle replacement - uncompensated", "90,00 US$"],
-    ["Custom bone/synthetic saddle replacement - compensated", "100,00 US$"],
+    ["Custom bone/synthetic nut replacement", "$100"],
+    ["Custom bone/synthetic saddle replacement - uncompensated", "$90"],
+    ["Custom bone/synthetic saddle replacement - compensated", "$100"],
     ["Replacement tuner install", "$35 + tuners"],
     ["Magnetic pickup install", "≥$75"],
     ["Under-saddle p-up install", "≥$100"],
     ["Neck reset", "≥$600"],
-    ["Complete re-fret", "500,00 US$"],
+    ["Complete re-fret", "$500"],
     ["Crack Repair", "$25/cleat"],
     ["Brace re-glue", "$50/brace"],
-    ["Bridge re-glue", "250,00 US$"],
+    ["Bridge re-glue", "$250"],
     ["Re-tube and bias amp", "$50 + tubes"],
-    ["Electronics bench fee*", "50,00 US$"],
-    ["Labor rate", "100,00 US$"]
+    ["Electronics bench fee*", "$50"],
+    ["Labor rate", "$100"]
   ]
 }
