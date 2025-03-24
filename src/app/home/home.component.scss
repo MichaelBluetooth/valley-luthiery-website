@@ -9,19 +9,19 @@
 //MAKE SURE THESE IMAGES ARE PRE-LOADED (see styles.scss)
 @keyframes bg-transition {
     0%, 15%, 100% {
-        background-image: url('images/background2_dark.webp');
+        background-image: url('images/background2.jpg');
     }
 
     30%, 45% {
-        background-image: url('images/background3_dark.webp')
+        background-image: url('images/background3.jpg')
     }
 
     60%, 73% {
-        background-image: url('images/background_dark.webp');;
+        background-image: url('images/background.jpg');;
     }
 
     82%, 90% {
-        background-image: url('images/background4_dark.webp');
+        background-image: url('images/background4.jpg');
     }
 }
 
