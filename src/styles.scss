@@ -10,7 +10,8 @@ $size-lg: 992px;
 $size-xl: 1200px;
 $size-xl: 1400px;
 
-html, body {
+html,
+body {
     height: 100%;
     width: 100%;
     margin: 0;
@@ -18,12 +19,12 @@ html, body {
     display: flex;
     flex-direction: row;
 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-    // color: $font-color;
-    // background-color: $color-light;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif // color: $font-color;
+        // background-color: $color-light;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
     text-decoration: none;
     color: inherit;
     cursor: pointer;
@@ -41,5 +42,5 @@ body::before {
     width: 0;
     height: 0;
     overflow: hidden;
-    background-image: url('images/background4.jpg'), url('images/background.jpg'), url('images/background3.jpg'), url('images/background2.jpg'),
-  }
+    background-image: url('images/background4.webp'), url('images/background.webp'), url('images/background3.webp'), url('images/background2.webp'),
+}
